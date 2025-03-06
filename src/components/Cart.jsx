@@ -1,4 +1,5 @@
-import { use, useContext } from 'react';
+import React from 'react';
+import { useContext } from 'react';
 import { CartContext } from '../store/shoping-cart-context';
 
 export default function Cart() {
@@ -9,6 +10,7 @@ export default function Cart() {
     (acc, item) => acc + item.price * item.quantity,
     0
   );
+
   const formattedTotalPrice = `$${totalPrice.toFixed(2)}`;
 
   return (

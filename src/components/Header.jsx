@@ -1,3 +1,4 @@
+import React from 'react';
 import { useRef, useContext } from 'react';
 import { CartContext } from '../store/shoping-cart-context.jsx';
 
