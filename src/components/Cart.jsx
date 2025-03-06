@@ -3,6 +3,7 @@ import { CartContext } from '../store/shoping-cart-context';
 
 export default function Cart({ onUpdateItemQuantity }) {
   const cartCtx = useContext(CartContext);
+  // const {...items } =useContext(CartContext)
 
   const totalPrice = cartCtx.items.reduce(
     (acc, item) => acc + item.price * item.quantity,
